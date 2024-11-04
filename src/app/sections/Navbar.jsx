@@ -74,13 +74,13 @@ function ResponsiveAppBar() {
           {/* Centered Nav Links (Desktop view) */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
-              <Button
+              <MenuItem
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
-              </Button>
+                <Typography textAlign="center" component='a' className='font-montserrat font-light' sx={{fontSize: '0.9rem'}}>{page}</Typography>
+              </MenuItem>
             ))}
           </Box>
         </Toolbar>

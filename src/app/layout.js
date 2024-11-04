@@ -2,17 +2,21 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { CssBaseline } from "@mui/material";
 
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+// Define Montserrat with multiple weights
+const montserrat = localFont({
+  src: [
+    {
+      path: "./fonts/Montserrat-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Montserrat-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-montserrat",
 });
 
 export const metadata = {
@@ -23,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#15171c]`}>
+      <body className={`${montserrat.variable} antialiased bg-[#15171c]`}>
         <CssBaseline />
         {children}
       </body>
