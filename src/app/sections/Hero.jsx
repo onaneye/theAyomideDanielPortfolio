@@ -55,7 +55,7 @@ function VideoHero() {
           <Typography 
             component="h1" 
             className="font-montserrat font-bold"
-            sx={{ fontSize: { xs: '2.5rem', sm: '4rem', md: '4rem' } }}
+            sx={{ fontSize: { xs: '2.5rem', sm: '4rem', md: '4rem', lg: '4rem', lineHeight:{xs: '4rem', lg:'5rem'}} }}
           >
             WE ARE <strong className="text-[#3bbbf2]">CREATIVE</strong> DESIGN AGENCY
           </Typography>
