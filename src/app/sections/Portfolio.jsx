@@ -13,7 +13,7 @@ const Portfolio = () => {
     : projects.filter(project => project.type === selectedFilter);
 
   return (
-    <section className='bg-black pt-12'>
+    <section className='bg-[#2a2c33] pt-12 pb-12'>
       <Container
         maxWidth={false}
         sx={{
@@ -52,7 +52,7 @@ const Portfolio = () => {
         <Grid container spacing={3}>
           {filteredProjects.map(project => (
             <Grid item xs={12} sm={6} md={4} key={project.id}>
-              <Box sx={{padding: '16px', textAlign: 'center', backgroundColor: '#222' }}>
+              <Box sx={{padding: '16px', textAlign: 'center', backgroundColor: '#15171c' }}>
                 {project.mediaType === 'image' ? (
                   <img src={project.media} alt={project.title} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
                 ) : project.mediaType === 'video' ? (

@@ -6,7 +6,7 @@ import Stat from '../components/Stat'
 
 const About = () => {
   return (
-    <section className='mt-24 bg-black pt-8 '>
+    <section className='mt-24 bg-[#2a2c33] pt-8 '>
       <Container 
           maxWidth={false}
           sx={{
