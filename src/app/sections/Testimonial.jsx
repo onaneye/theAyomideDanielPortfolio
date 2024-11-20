@@ -118,7 +118,7 @@ const Testimonial = () => {
                   sx={{ mt: 2, fontStyle: "italic" }}
                   className="text-gray-700"
                 >
-                  "{testimonial.testimonial}"
+                  {testimonial.testimonial}
                 </Typography>
               </Card>
             </SwiperSlide>
